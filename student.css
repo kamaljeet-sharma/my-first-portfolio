@@ -1,0 +1,96 @@
+/* Dark Theme */
+body {
+  background-color: #121212;
+  color: #00ff00; /* Green text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+form input, form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+form input {
+  flex: 1;
+  min-width: 150px;
+}
+
+form button {
+  background: #00ff00;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #00cc00;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  border: 1px solid #00ff00;
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  background: #2a2a2a;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  table, th, td {
+    font-size: 14px;
+  }
+}
